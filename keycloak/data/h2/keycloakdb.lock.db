@@ -1,6 +1,6 @@
 #FileLock
-#Sat Dec 30 01:19:43 ICT 2023
-server=192.168.1.23\:60934
+#Sat Dec 30 01:38:59 ICT 2023
+server=192.168.1.23\:61621
 hostName=JKTM0869.pajakku.com
 method=file
-id=18cb6cdb3cf65b269a00ca2be7caa1519c659e8053f
+id=18cb6df4fa261cb50e9fa0dd222d01a99ed6a1bf628
