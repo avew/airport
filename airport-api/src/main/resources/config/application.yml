@@ -1,0 +1,23 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: airport-api
+  profiles:
+    active: dev
+  jpa:
+    open-in-view: false
+
+app:
+  cors:
+    allowed-origins: "*"
+    allowed-methods: GET, PUT, POST, DELETE, OPTIONS
+    allowed-headers: "*"
+    exposed-headers: X-Total-Count, X-PPH, X-Summary, X-DPP
+    allow-credentials: false
+    max-age: 1800
+  application:
+    name: '@project.name@'
+    version: '@project.version@'
+    timestamp: '@timestamp@'
+

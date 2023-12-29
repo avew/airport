@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://127.0.0.1:5432/flight-api
+    username: postgres
+    password: 12qwaszx
+  jpa:
+    show-sql: false
+  security:
+    oauth2:
+      client:
+      resourceserver:
+        jwt:
+          issuer-uri: ${JWT_ISSUER:http://localhost:8080/realms/airport}
+          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+
+keycloak:
+  realm: flight
+  auth-server-url: http://localhost:8080
+  resource: api-client
+  credentials:
+    secret: rx2qoZtzsqya9lAab2qhpjNBpJQ3JkcS
+  bearer-only: true
+  use-resource-role-mappings: true
